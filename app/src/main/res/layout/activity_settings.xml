@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andoid.chatcomm.SettingsActivity"
+    android:background="@color/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/displayimage" />
+    
+    <TextView
+        android:id="@+id/settings_displayname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_image"
+        android:text="Display Name"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/settings_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_displayname"
+        android:text="Hi there, I'm using Chat Comm App"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/settings_changeimagebtn"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:text="Change Image"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/settings_status"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+    <Button
+        android:id="@+id/settings_changestatusbutton"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:text="Change Status"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/settings_changeimagebtn"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
