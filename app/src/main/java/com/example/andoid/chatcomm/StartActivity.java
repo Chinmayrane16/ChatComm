@@ -52,13 +52,11 @@ public class StartActivity extends AppCompatActivity {
             }
         });
 
-        mSignUpBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        mSignUpBtn.setOnClickListener(view -> {
                 Intent mainintent = new Intent(getApplicationContext(),RegisterActivity.class);
                 startActivity(mainintent);
                 //finish();
-            }
+            
         });
 
     }
